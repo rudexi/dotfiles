@@ -8,5 +8,6 @@
     ~/.dotfiles: ''
     ~/.tmux.conf: tmux.conf
     ~/.bashrc: bashrc
+    ~/.bash_profile: bash_profile
     ~/.vim: vim
     ~/.vimrc: vimrc
