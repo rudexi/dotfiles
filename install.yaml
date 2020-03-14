@@ -10,3 +10,10 @@
     ~/.bashrc: bashrc
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/bin:
+      glob: true
+      path: bin/*
+      relink: true
+- create:
+    - ~/.logs
+    - ~/bin
