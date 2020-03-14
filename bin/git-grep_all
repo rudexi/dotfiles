@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+git branch -r | tr -d \* | xargs git grep "$1" --

@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+if [[ "$1" == "-v" ]]; then
+    diff="vimdiff"
+    shift
+else
+    diff="diff -u"
+fi
+
+host1="$1"
+host2="$2"
+command="$3"
+
+$diff \
+    <(ssh "$host1" "${command}") \
+    <(ssh "$host2" "${command}")

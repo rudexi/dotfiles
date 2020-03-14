@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+`tmux rename-window "#{ARGV[0].split(' ')[0]}*"`
+pane = `tmux display-message -p "#P"`.strip
+ARGV.each do |host|
+  `tmux splitw -v "ssh #{host}"`
+  `tmux select-layout tiled`
+end
+`tmux set-window-option synchronize-panes on`
+`tmux select-pane -t "#{pane}"`
+`tmux kill-pane -t "#{pane}"`

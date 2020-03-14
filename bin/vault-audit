@@ -1,0 +1,33 @@
+#!/usr/bin/bash
+
+echo 'Method, Type, Entity, Entity name, Policies, Misc'
+for auth_method in $(vault auth list -format=json | jq 'to_entries[].key' -r); do
+  auth_method="${auth_method%/*}"
+  auth_type=$(vault auth list -format=json | jq ".\"${auth_method}/\".type" -r)
+  case "${auth_type}" in
+    ldap)
+      for user in $(vault list -format=json "auth/${auth_method}/users" | jq '.[]' -r); do
+        policies=$(vault read -field=policies "auth/${auth_method}/users/${user}")
+        misc=
+        echo "${auth_method}, ${auth_type}, user, ${user}, ${policies}"
+      done
+      for group in $(vault list -format=json "auth/${auth_method}/groups" | jq '.[]' -r); do
+        policies="$(vault read -field=policies "auth/${auth_method}/groups/${group}")"
+        echo "${auth_method}, ${auth_type}, group, ${group}, ${policies}"
+      done
+    ;;
+    cert)
+      for cert in $(vault list -format=json "auth/${auth_method}/certs" | jq '.[]' -r); do
+        common_name="$(vault read -field=allowed_common_names "auth/${auth_method}/certs/${cert}")"
+        policies="$(vault read -field=policies "auth/${auth_method}/certs/${cert}")"
+        echo "${auth_method}, ${auth_type}, cert, ${common_name}, ${policies}"
+      done
+    ;;
+    #token)
+    #  for token in $(vault list -format=json "auth/${auth_method}/roles" | jq '.[]' -r); do
+    #  done
+    #;;
+    *) (>&2 echo "No audit implemented for auth type '${auth_type}'") ;;
+  esac
+
+done
