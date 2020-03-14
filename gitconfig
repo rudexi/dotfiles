@@ -1,0 +1,35 @@
+[alias]
+  a = add
+  r = reset
+  ra = reset --hard
+  ri = rebase -i
+  ric = rebase --continue
+  rib = rebase --abort
+  fe = fetch --all --prune
+  co = checkout
+  go = checkout
+  new = checkout -b
+  ci = commit
+  cin = commit --no-verify
+  ca = commit --amend --no-edit
+  can = commit --amend --no-edit --no-verify
+  st = status
+  br = branch
+  pl = pull --no-ff
+  me = merge --no-edit --no-ff
+  lo = branch -r --contains
+  locate = branch -r --contains
+  unstage = reset HEAD --
+  reset-file = checkout HEAD --
+  rf = reset-file
+  un = unstage
+  cp = cherry-pick
+  show = !git show "$1" $2
+  lab = repo sec-gitlab
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
