@@ -94,7 +94,7 @@ echo -ne "\033]0;$h\007"
 # Git prompt
 ############
 
-function prompter() {
+function git_prompt() {
     if [[ "$?" = 0 ]]; then
         exit_code="$green✔$reset"
     else
@@ -158,7 +158,7 @@ function logger() {
 }
 
 function prompt_command() {
-    prompter
+    git_prompt
     logger
 }
 

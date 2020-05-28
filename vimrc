@@ -10,13 +10,12 @@ set ff=unix " Remove \r automatically
 " viminfo buffer
 set viminfo='100,<1000
 
-" Pathogen
-execute pathogen#infect()
-
 " Toogle solarized
-call togglebg#map("<F4>")
+" call togglebg#map("<F4>")
 
-" let b:syntastic_python_python_exec = '/usr/bin/python3'
+" Ale
+packloadall
+silent! helptags ALL
 
 "
 set laststatus=2
