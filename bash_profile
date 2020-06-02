@@ -13,7 +13,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 eval "$(pyenv virtualenv-init -)"
-which pipenv >/dev/null && eval "$(pipenv --completion)"
+which pipenv >/dev/null 2>&1 && eval "$(pipenv --completion)"
 
 # User specific environment and startup programs
 
