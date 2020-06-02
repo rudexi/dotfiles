@@ -42,14 +42,14 @@ export GOPATH=$HOME/.go
 
 if $is_local; then
     PATH=$(echo \
+        ~/bin \
+        ~/.local/bin \
         /usr/{,s}bin \
         /usr/local/{,s}bin \
         /{,s}bin \
         /usr/lib64/qt-3.3/bin \
         /opt/dell/srvadmin/bin \
         ~/.cabal/bin \
-        ~/bin \
-        ~/.local/bin \
         /opt/puppetlabs/bin \
     |tr ' ' ':')
 fi
