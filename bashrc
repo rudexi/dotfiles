@@ -9,6 +9,10 @@ if [ -f /etc/bashrc ]; then
 	source /etc/bashrc
 fi
 
+if [[ -f ~/.bashrc.local ]]; then
+  source ~/.bashrc.local
+fi
+
 #xmodmap
 #xmodmap ~/.Xmodmap
 #bind -f ~/.inputrc

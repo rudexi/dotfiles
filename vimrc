@@ -1,6 +1,12 @@
+" VIM 8 packages
+packloadall
+silent! helptags ALL
+
+" Colors
 syntax enable
 set background=dark
-colorscheme solarized8_dark
+colorscheme solarized
+
 set number
 set cursorline
 set encoding=utf-8
@@ -10,12 +16,10 @@ set ff=unix " Remove \r automatically
 " viminfo buffer
 set viminfo='100,<1000
 
+set backspace=indent,eol,start
+
 " Toogle solarized
 " call togglebg#map("<F4>")
-
-" Ale
-packloadall
-silent! helptags ALL
 
 "
 set laststatus=2
