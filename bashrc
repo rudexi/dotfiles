@@ -5,6 +5,10 @@ export TERM=xterm-256color
 # Source global definitions
 ###########################
 
+if [[ -z "${PS1}" ]]; then
+  return
+fi
+
 if [ -f /etc/bashrc ]; then
 	source /etc/bashrc
 fi
