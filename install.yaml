@@ -10,6 +10,7 @@
     - ~/.vim
     - ~/.vim/autoload
     - ~/.vim/bundle
+    - ~/.gitconfig.d
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.bashrc: bashrc
@@ -17,6 +18,7 @@
     ~/.vim/pack: vim_pack
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
+    ~/.gitconfig.d/aliases.ini: gitconfig.d/aliases.ini
     ~/bin:
       glob: true
       path: bin/*
