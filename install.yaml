@@ -10,11 +10,13 @@
     - ~/.vim
     - ~/.vim/autoload
     - ~/.vim/bundle
+    - ~/.bash_completion.d
     - ~/.gitconfig.d
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
+    ~/.bash_completion: bash_completion
     ~/.vim/pack: vim_pack
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
