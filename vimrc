@@ -26,6 +26,15 @@ set laststatus=2
 set noshowmode
 let g:lightline = {'colorscheme': 'solarized'}
 
+" ALE
+try
+  let g:ale_fixers = {
+    \  '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \  'puppet': ['puppetlint'],
+    \}
+  let g:ale_python_auto_pipenv = 1
+catch
+endtry
 
 " See tabs
 set list
