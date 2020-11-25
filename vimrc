@@ -15,7 +15,7 @@ set ff=unix " Remove \r automatically
 
 " viminfo buffer
 set viminfo='100,<1000
-
+syntax sync minlines=10000
 set backspace=indent,eol,start
 
 " Toogle solarized
