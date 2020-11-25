@@ -14,3 +14,6 @@
 # Not provided by dotbot (user section)
 [include]
   path = ~/.gitconfig.d/identity.ini
+
+[credential "https://github.com"]
+  helper = cache
