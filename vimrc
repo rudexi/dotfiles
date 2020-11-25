@@ -2,6 +2,8 @@
 packloadall
 silent! helptags ALL
 
+source $VIMRUNTIME/vimrc_example.vim
+
 " Colors
 syntax enable
 set background=dark
