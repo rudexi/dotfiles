@@ -17,7 +17,7 @@
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
     ~/.bash_completion: bash_completion
-    ~/.vim/pack: vim_pack
+    ~/.vim/pack: vim/pack
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
     ~/.gitconfig.d/aliases.ini: gitconfig.d/aliases.ini
