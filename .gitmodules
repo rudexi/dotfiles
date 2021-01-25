@@ -61,3 +61,7 @@
 [submodule "vim/pack/git-plugins/vim-puppet"]
 	path = vim/pack/git-plugins/vim-puppet
 	url = https://github.com/rodjek/vim-puppet.git
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty

@@ -1,13 +1,15 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
-if ! which pip2 >/dev/null 2>&1; then
-  (>&2 echo "You need to install pip2")
-  exit 1
-fi
+set -e
 
-if ! (pip2 list | grep -q dotbot); then
-  (>&2 echo "You need to install dotbot with pip2")
-  exit 1
-fi
+CONFIG="install.conf.yaml"
+DOTBOT_DIR="dotbot"
 
-dotbot -c ./install.yaml
+DOTBOT_BIN="bin/dotbot"
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "${BASEDIR}"
+git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
+git submodule update --init --recursive "${DOTBOT_DIR}"
+
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
