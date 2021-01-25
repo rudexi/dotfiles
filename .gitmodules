@@ -17,49 +17,49 @@
 	path = vim/pack/git-plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 [submodule "vim/pack/git-plugins/ansible-vim"]
-	path = vim/pack/git-plugins/ansible-vim
+	path = vim/pack/git-plugins/start/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim.git
 [submodule "vim/pack/git-plugins/vim-bufferline"]
-	path = vim/pack/git-plugins/vim-bufferline
+	path = vim/pack/git-plugins/start/vim-bufferline
 	url = https://github.com/bling/vim-bufferline.git
 [submodule "vim/pack/git-plugins/vim-epp"]
-	path = vim/pack/git-plugins/vim-epp
+	path = vim/pack/git-plugins/start/vim-epp
 	url = https://github.com/rudexi/vim-epp.git
 [submodule "vim/pack/git-plugins/vim-fugitive"]
-	path = vim/pack/git-plugins/vim-fugitive
+	path = vim/pack/git-plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/pack/git-plugins/vim-hashicorp-tools"]
-	path = vim/pack/git-plugins/vim-hashicorp-tools
+	path = vim/pack/git-plugins/start/vim-hashicorp-tools
 	url = https://github.com/hashivim/vim-hashicorp-tools.git
 [submodule "vim/pack/git-plugins/vim-hcl"]
-	path = vim/pack/git-plugins/vim-hcl
+	path = vim/pack/git-plugins/start/vim-hcl
 	url = https://github.com/b4b4r07/vim-hcl.git
 [submodule "vim/pack/git-plugins/vim-kickstart"]
-	path = vim/pack/git-plugins/vim-kickstart
+	path = vim/pack/git-plugins/start/vim-kickstart
 	url = https://github.com/tangledhelix/vim-kickstart.git
 [submodule "vim/pack/git-plugins/vim-markdown"]
-	path = vim/pack/git-plugins/vim-markdown
+	path = vim/pack/git-plugins/start/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "vim/pack/git-plugins/Vim-Jinja2-Syntax"]
-	path = vim/pack/git-plugins/Vim-Jinja2-Syntax
+	path = vim/pack/git-plugins/start/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
 [submodule "vim/pack/git-plugins/vim-ruby"]
-	path = vim/pack/git-plugins/vim-ruby
+	path = vim/pack/git-plugins/start/vim-ruby/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "vim/pack/git-plugins/vim-rsyslog"]
-	path = vim/pack/git-plugins/vim-rsyslog
+	path = vim/pack/git-plugins/start/vim-rsyslog
 	url = https://github.com/rudexi/vim-rsyslog
 [submodule "vim/pack/git-plugins/vim-systemd-syntax"]
-	path = vim/pack/git-plugins/vim-systemd-syntax
+	path = vim/pack/git-plugins/start/vim-systemd-syntax
 	url = https://github.com/Matt-Deacalion/vim-systemd-syntax.git
 [submodule "vim/pack/git-plugins/vim-toml"]
-	path = vim/pack/git-plugins/vim-toml
+	path = vim/pack/git-plugins/start/vim-toml
 	url = https://github.com/cespare/vim-toml.git
 [submodule "vim/pack/git-plugins/vim-vue"]
-	path = vim/pack/git-plugins/vim-vue
+	path = vim/pack/git-plugins/start/vim-vue
 	url = https://github.com/posva/vim-vue.git
 [submodule "vim/pack/git-plugins/vim-puppet"]
-	path = vim/pack/git-plugins/vim-puppet
+	path = vim/pack/git-plugins/start/vim-puppet/vim-puppet
 	url = https://github.com/rodjek/vim-puppet.git
 [submodule "dotbot"]
 	path = dotbot
