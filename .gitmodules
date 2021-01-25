@@ -43,9 +43,6 @@
 [submodule "vim/pack/git-plugins/Vim-Jinja2-Syntax"]
 	path = vim/pack/git-plugins/start/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
-[submodule "vim/pack/git-plugins/vim-ruby"]
-	path = vim/pack/git-plugins/start/vim-ruby/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "vim/pack/git-plugins/vim-rsyslog"]
 	path = vim/pack/git-plugins/start/vim-rsyslog
 	url = https://github.com/rudexi/vim-rsyslog
@@ -58,9 +55,6 @@
 [submodule "vim/pack/git-plugins/vim-vue"]
 	path = vim/pack/git-plugins/start/vim-vue
 	url = https://github.com/posva/vim-vue.git
-[submodule "vim/pack/git-plugins/vim-puppet"]
-	path = vim/pack/git-plugins/start/vim-puppet/vim-puppet
-	url = https://github.com/rodjek/vim-puppet.git
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
