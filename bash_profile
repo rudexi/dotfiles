@@ -18,7 +18,7 @@ fi
 if [[ -s "${HOME}/.rvm/scripts/rvm" ]] && [[ "$(type -t rvm)" != 'function' ]]; then
   source "$HOME/.rvm/scripts/rvm"
 fi
-if [[ -s "${HOME}/.gvm/scripts/gvm" ]] && [[ -z "${GVM_ROOT}" ]]; then
+if [[ -s "${HOME}/.gvm/scripts/gvm" ]] && [[ "$(type -t gvm)" != 'function' ]]; then
   source "${HOME}/.gvm/scripts/gvm"
 fi
 
@@ -37,5 +37,11 @@ fi
 
 if command -v tmux >/dev/null 2>&1; then
     # if not inside a tmux session, and if no session is started, start a new session
-    [ -z "${TMUX}" ] && (tmux attach >/dev/null 2>&1 || tmux)
+    #if [[ -z "${TMUX}" ]]; then
+    #  tmux has-session -t main || tmux new-session -d -s main
+    #  if [[ $(tmux list-client -t main | wc -l) -gt 0 ]]; then
+    #    tmux attach -t main
+    #  fi
+    #fi
+    :
 fi

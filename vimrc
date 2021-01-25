@@ -2,7 +2,7 @@
 packloadall
 silent! helptags ALL
 
-source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/vimrc_example.vim
 
 " Colors
 syntax enable

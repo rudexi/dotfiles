@@ -58,9 +58,10 @@ if $is_local; then
         /usr/lib64/qt-3.3/bin \
         /opt/dell/srvadmin/bin \
         ~/.cabal/bin \
-	~/.cargo/bin \
+        ~/.cargo/bin \
         ~/node_modules/.bin \
         /opt/puppetlabs/bin \
+         ~/.gvm/bin/ \
     |tr ' ' ':')
 fi
 
