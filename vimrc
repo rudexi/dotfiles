@@ -9,6 +9,8 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+set nobackup
+set noundofile
 set number
 set cursorline
 set encoding=utf-8
