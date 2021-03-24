@@ -62,3 +62,6 @@
 [submodule "vim/pack/git-plugins/start/rust.vim"]
 	path = vim/pack/git-plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule "vim/pack/git-plugins/start/vim-ebnf"]
+	path = vim/pack/git-plugins/start/vim-ebnf
+	url = https://github.com/killphi/vim-ebnf.git
